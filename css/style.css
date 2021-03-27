@@ -103,7 +103,7 @@ img {
 }
 
 .aa-secondary-btn {
-  background-color: #fff;
+  background-color: #192133;
   font-size: 16px;
   padding: 10px 22px;
   margin-top: 10px;
@@ -358,8 +358,8 @@ img {
 }
 #aa-header .aa-header-top .aa-header-top-right .aa-head-top-nav-right li a {
   display: inline-block;
-  color: #333333;
-  border-right: 1px solid #ddd;
+  color: #192133;
+  border-right: 1px solid black;
   font-size: 14px;
   padding: 5px 8px;
 }
@@ -414,7 +414,7 @@ img {
   width: 500px;
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-search-box input[type="text"] {
-  border: 1px solid #ddd;
+  border: 1px solid #192133;
   color: #555;
   font-size: 14px;
   font-family: "Raleway", sans-serif;
@@ -822,7 +822,7 @@ img {
   text-align: center;
 }
 #aa-slider .aa-slider-area .seq-title span {
-  background-color: #fff;  
+  background-color: #192133;  
   display: inline-block;
   padding: 6px 15px;
   text-transform: uppercase;
@@ -830,8 +830,8 @@ img {
   margin-bottom: 10px;
 }
 #aa-slider .aa-slider-area .seq-title h2 {
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #333;
+  background-color: #192133;
+  color: #fff;
   display: inline-block;
   float: none;
   font-size: 50px;
@@ -980,7 +980,7 @@ img {
   z-index: 99;
 }
 #aa-promo .aa-promo-area .aa-promo-banner .aa-prom-content span {
-  background-color: #FFF;
+  background-color: #192133;
   padding: 5px 10px;  
 }
 #aa-promo .aa-promo-area .aa-promo-banner .aa-prom-content h4 {

@@ -90,15 +90,15 @@ includeHTML();
  
   <!-- catg header banner section -->
   <section id="aa-catg-head-banner">
-    <img src="img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+    <img src="img/partner1031.jpg" alt="fashion img" style="width: 100%;">
     <div class="aa-catg-head-banner-area">
      <div class="container">
       <div class="aa-catg-head-banner-content">
-        <h2>Account Page</h2>
-        <ol class="breadcrumb">
+        <h2>Become Our Partner</h2>
+        <!-- <ol class="breadcrumb">
           <li><a href="index.html">Home</a></li>                   
           <li class="active">Account</li>
-        </ol>
+        </ol> -->
       </div>
      </div>
    </div>
@@ -110,79 +110,43 @@ includeHTML();
 
 
   <!-- footer -->  
-  <footer id="aa-footer">
-    <!-- footer bottom -->
-    <div class="aa-footer-top">
-     <div class="container">
-        <div class="row">
-        <div class="col-md-12">
-          <div class="aa-footer-top-area">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
-                  <h3>Main Menu</h3>
-                  <ul class="aa-footer-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Our Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
-                  <div class="aa-footer-widget">
-                    <h3>Knowledge Base</h3>
-                    <ul class="aa-footer-nav">
-                      <li><a href="#">Delivery</a></li>
-                      <li><a href="#">Returns</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Discount</a></li>
-                      <li><a href="#">Special Offer</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
-                  <div class="aa-footer-widget">
-                    <h3>Useful Links</h3>
-                    <ul class="aa-footer-nav">
-                      <li><a href="#">Site Map</a></li>
-                      <li><a href="#">Search</a></li>
-                      <li><a href="#">Advanced Search</a></li>
-                      <li><a href="#">Suppliers</a></li>
-                      <li><a href="#">FAQ</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
-                  <div class="aa-footer-widget">
-                    <h3>Contact Us</h3>
-                    <address>
-                      <p> 25 Astor Pl, NY 10003, USA</p>
-                      <p><span class="fa fa-phone"></span>+1 212-982-4589</p>
-                      <p><span class="fa fa-envelope"></span>dailyshop@gmail.com</p>
-                    </address>
-                    <div class="aa-footer-social">
-                      <a href="#"><span class="fa fa-facebook"></span></a>
-                      <a href="#"><span class="fa fa-twitter"></span></a>
-                      <a href="#"><span class="fa fa-google-plus"></span></a>
-                      <a href="#"><span class="fa fa-youtube"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-     </div>
-    </div>
-    <!-- footer-bottom -->
+  
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }      
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+    </script>
+  <div w3-include-html="footer.html"></div> 
+
+<script>
+includeHTML();
+</script>
+
+    <!-- footer-bottom
     <div class="aa-footer-bottom">
       <div class="container">
         <div class="row">
@@ -200,7 +164,8 @@ includeHTML();
       </div>
       </div>
     </div>
-  </footer>
+    
+  </footer> -->
   <!-- / footer -->
   <!-- Login Modal -->  
   <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
