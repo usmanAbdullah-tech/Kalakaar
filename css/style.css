@@ -40,7 +40,7 @@
 body {
   background-color: #ffffff;
   font-family: "Lato", sans-serif;
-  color: #333333;
+  color: #FFF;
   font-size: 16px;
   overflow-x: hidden;
 }
@@ -358,7 +358,7 @@ img {
 }
 #aa-header .aa-header-top .aa-header-top-right .aa-head-top-nav-right li a {
   display: inline-block;
-  color: #192133;
+  color: white;
   border-right: 1px solid black;
   font-size: 14px;
   padding: 5px 8px;
