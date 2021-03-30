@@ -103,7 +103,7 @@ img {
 }
 
 .aa-secondary-btn {
-  background-color: #192133;
+  background-color: #000032;
   font-size: 16px;
   padding: 10px 22px;
   margin-top: 10px;
@@ -822,7 +822,7 @@ img {
   text-align: center;
 }
 #aa-slider .aa-slider-area .seq-title span {
-  background-color: #192133;  
+  background-color: #000032;  
   display: inline-block;
   padding: 6px 15px;
   text-transform: uppercase;
@@ -830,7 +830,7 @@ img {
   margin-bottom: 10px;
 }
 #aa-slider .aa-slider-area .seq-title h2 {
-  background-color: #192133;
+  background-color: #000032;
   color: #fff;
   display: inline-block;
   float: none;
@@ -843,7 +843,7 @@ img {
   width: 100%;
 }
 #aa-slider .aa-slider-area .seq-title p {
-  color: #fff;
+  color: #000;
   display: block;
   text-align: center;
   letter-spacing: 0.5px;
