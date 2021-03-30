@@ -1442,6 +1442,7 @@ img {
 #aa-testimonial:after {
   content: '';
   background-color: grey;
+  background-image: url('img/cover_bg_1.jpeg');
   position: absolute;
   left: 0;
   right: 0;
