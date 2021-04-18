@@ -39,7 +39,13 @@
                 <!-- / currency -->
                 <!-- start cellphone -->
                 <div class="cellphone hidden-xs">
-                  <p><span class="fa fa-phone"></span>+92-302-497-4459</p>
+                  <p style="color:white"><span class="fa fa-phone"></span>+92-302-497-4459</p>
+                </div>
+                <div class="cellphone hidden-xs" style="padding: 5px;">
+                  <a href="#" style="padding: 10px;  color: aliceblue;"><span class="fa fa-facebook"></span></a>
+                  <a href="#" style="padding: 10px;  color: aliceblue;"><span class="fa fa-twitter"></span></a>
+                  <a href="#" style="padding: 10px;  color: aliceblue;"><span class="fa fa-google-plus"></span></a>
+                  <a href="#" style="padding: 10px;  color: aliceblue;"><span class="fa fa-youtube"></span></a>
                 </div>
                 <!-- <div class="aa-footer-social">
                   <a href="#"><span class="fa fa-facebook"></span></a>
@@ -52,9 +58,10 @@
               <!-- / header top left -->
               <div class="aa-header-top-right">
                 <ul class="aa-head-top-nav-right">
-                  <li><a href="account.html">My Account</a></li>
-                  <li class="hidden-xs"><a href="wishlist.html">Wishlist</a></li>
+                  <!-- <li><a href="account.html">My Account</a></li> -->
                   <li class="hidden-xs"><a href="cart.html">My Cart</a></li>
+                  <li class="hidden-xs"><a href="wishlist.html">Wishlist</a></li>
+                  
                   <li class="hidden-xs"><a href="checkout.html">Checkout</a></li>
                   <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
                 </ul>
@@ -78,7 +85,7 @@
                 <a href="index.html">
                   <!-- <p><span><img src="img/logo111.png" alt="logo img" width="400px" height="100px"></span></p> -->
                   <!-- <br><p style="font-size:medium">Art Studio & Design House</p> -->
-                  <p style="color: white;font-size: larger;">Kala<strong style="color: black;">Kaar</strong> <span style="color: white;font-size:medium;">Art Studio & Design House</span></p>
+                  <p style="color: white;font-size: larger;">Kala<strong style="color: black;">Kaar</strong> <span style="color: white;font-size:small;">Art Studio & Design House</span></p>
                 </a>
                 <!-- img based logo -->
                 <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
@@ -91,8 +98,40 @@
                   <span class="aa-cart-title">SHOPPING CART</span>
                   <span class="aa-cart-notify">2</span>
                 </a>
-                <div class="aa-cartbox-summary">
-                  <ul>
+                <div class="aa-cartbox-summary" >
+                  <ul style="height:300px;overflow-y: scroll;">
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
                     <li>
                       <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
                       <div class="aa-cartbox-info">
@@ -110,15 +149,21 @@
                       <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
                     </li>                    
                     <li>
-                      <span class="aa-cartbox-total-title">
-                        Total
-                      </span>
-                      <span class="aa-cartbox-total-price">
-                        $500
-                      </span>
+                      
                     </li>
                   </ul>
+                  <strong>
+                    <br>
+                  <span class="aa-cartbox-total-title">
+                    Total
+                  </span>
+                  <span class="aa-cartbox-total-price">
+                    $500
+                  </span>
+                  </strong>
+                  <br>
                   <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Checkout</a>
+
                 </div>
               </div>
               <!-- / cart box -->
@@ -158,11 +203,11 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="#">Services <span class="caret"></span></a>
                 <ul class="dropdown-menu">                
-                  <li><a href="#">Designing Services</a></li>
-                  <li><a href="#">Sampling & Production</a></li>
-                  <li><a href="#">KalaKaar's Services</a></li>
-                  <li><a href="#">Photography & Videography</a></li>                                                
-                  <li><a href="#">Sales & Marketing</a></li>
+                  <li><a href="designingservice.html">Designing Services</a></li>
+                  <li><a href="sandpservice.html">Sampling & Production</a></li>
+                  <li><a href="kalakaarservice.html">KalaKaar's Services</a></li>
+                  <li><a href="pandvservice.html">Photography & Videography</a></li>                                                
+                  <li><a href="salesandmarketingservice.html">Sales & Marketing</a></li>
                 </ul>
               </li>
                    
